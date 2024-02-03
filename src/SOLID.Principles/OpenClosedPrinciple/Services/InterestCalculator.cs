@@ -2,12 +2,12 @@ using OpenClosedPrinciple.Models;
 
 namespace OpenClosedPrinciple.Services;
 
-class InterestCalculator(BankAccount bankAccount)
+class InterestCalculator(InterestBearingBankAccount interestBearingBankAccount)
 {
-    private readonly BankAccount _bankAccount = bankAccount;
+    private readonly InterestBearingBankAccount _interestBearingBankAccount = interestBearingBankAccount;
     
     public decimal CalculateInterest()
     {
-        return _bankAccount.CalculateInterest();
+        return _interestBearingBankAccount.CalculateInterest();
     }
 }

@@ -2,7 +2,7 @@ using System;
 
 namespace OpenClosedPrinciple.Models;
 
-class CertificateDepositBankAccount : BankAccount
+class CertificateDepositBankAccount : InterestBearingBankAccount
 {
     public override decimal CalculateInterest()
     {
