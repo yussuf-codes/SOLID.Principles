@@ -3,10 +3,16 @@ using InterfaceSegregationPrinciple.Models.IModels;
 
 namespace InterfaceSegregationPrinciple.Models;
 
-class SavingsBankAccount : IRegularBankAccount
+class SavingsBankAccount : IRegularBankAccount, IInterestBearingBankAccount
 {
     public Guid AccountNumber { get; set; }
+    
     public decimal Balance { get; set; }
+    
+    public decimal CalculateInterest()
+    {
+        throw new NotImplementedException();
+    }
 
     public void Deposit(int amount)
     {
