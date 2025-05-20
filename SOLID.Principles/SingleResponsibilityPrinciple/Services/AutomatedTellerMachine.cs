@@ -12,13 +12,13 @@ class AutomatedTellerMachine(BankAccount bankAccount)
         // Some business logic
         throw new NotImplementedException();
     }
-    
+
     public void Withdraw(decimal amount)
     {
         // Some business logic
         throw new NotImplementedException();
     }
-    
+
     public void Transfer(BankAccount bankAccount, decimal amount)
     {
         // Some business logic

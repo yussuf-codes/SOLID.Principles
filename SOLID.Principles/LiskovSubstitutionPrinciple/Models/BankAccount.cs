@@ -6,5 +6,10 @@ abstract class BankAccount
 {
     public Guid AccountNumber { get; set; }
     public decimal Balance { get; set; }
-    public abstract void Deposit(int amount);
+    public virtual void Deposit(decimal amount)
+    {
+        if (amount < 0)
+            return;
+        Balance += amount;
+    }
 }

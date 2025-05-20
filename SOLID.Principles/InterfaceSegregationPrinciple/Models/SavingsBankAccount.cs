@@ -6,9 +6,9 @@ namespace InterfaceSegregationPrinciple.Models;
 class SavingsBankAccount : IRegularBankAccount, IInterestBearingBankAccount
 {
     public Guid AccountNumber { get; set; }
-    
+
     public decimal Balance { get; set; }
-    
+
     public decimal CalculateInterest()
     {
         throw new NotImplementedException();

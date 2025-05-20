@@ -5,12 +5,12 @@ namespace DependencyInversionPrinciple.Models;
 class PostgreSQL : IDatabase
 {
     private readonly string _connectionString;
-    
+
     public PostgreSQL(string connectionString)
     {
         _connectionString = connectionString;
     }
-    
+
     public int Create(object obj)
     {
         throw new System.NotImplementedException();

@@ -5,12 +5,12 @@ namespace DependencyInversionPrinciple.Models;
 class MongoDB : IDatabase
 {
     private readonly string _connectionString;
-    
+
     public MongoDB(string connectionString)
     {
         _connectionString = connectionString;
     }
-    
+
     public int Create(object obj)
     {
         throw new System.NotImplementedException();

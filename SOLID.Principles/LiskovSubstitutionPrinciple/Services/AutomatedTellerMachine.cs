@@ -4,13 +4,13 @@ namespace LiskovSubstitutionPrinciple.Services;
 
 class AutomatedTellerMachine
 {
-    void Withdraw(WithdrawalBankAccount withdrawalBankAccount, int amount)
-    {
-        withdrawalBankAccount.Withdraw(amount);
-    }
-    
-    void Deposit(BankAccount bankAccount, int amount)
+    public void Deposit(BankAccount bankAccount, int amount)
     {
         bankAccount.Deposit(amount);
+    }
+
+    public void Withdraw(WithdrawalBankAccount withdrawalBankAccount, int amount)
+    {
+        withdrawalBankAccount.Withdraw(amount);
     }
 }

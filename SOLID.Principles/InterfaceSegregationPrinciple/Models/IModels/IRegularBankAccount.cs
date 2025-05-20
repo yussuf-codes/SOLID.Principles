@@ -1,6 +1,3 @@
 namespace InterfaceSegregationPrinciple.Models.IModels;
 
-interface IRegularBankAccount : IBankAccount, IWithdrawable
-{
-    
-}
+interface IRegularBankAccount : IBankAccount, IWithdrawable;
